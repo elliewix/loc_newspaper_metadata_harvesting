@@ -71,7 +71,7 @@ for page in holdings:
             # the pure text chunk was needed here, thankfully.
             datetext = BeautifulSoup("<f>" + "".join(datechunks[start + 1:stop]) + "</f>", 'lxml').get_text()
             
-            # this date chunk is the most granualr row of information
+            # this date chunk is the most granular row of information
             # so add it to the empty list, which becomes the core stub value
             # for out csv.
             allrows.append([sn, location, fmt, datetext])
